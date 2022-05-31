@@ -31,8 +31,8 @@ Example : log backup
 [SQL Server Transaction Log Backup](https://www.sqlservertutorial.net/sql-server-administration/sql-server-transaction-log-backup/)  
 
 ## SQLCMD  
- -S : server name
- -E : Trusted Connection
+ -S : server name  
+ -E : Trusted Connection  
 ```mssql
 sqlcmd -S 127.0.0.1 -E -i instnwnd.sql -o log/instnwnd.log  
 ```
