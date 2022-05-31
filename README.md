@@ -1,17 +1,17 @@
 # SQL Server
 
-## Sample DB
+## Sample DB **AdventureWorks**
 
 Download backup files :
 [AdventureWorks](https://github.com/Microsoft/sql-server-samples/releases/download/adventureworks/AdventureWorks2019.bak)  
 
-Identify logical filenames contained in a backup set
+Identify logical filenames contained in the backup set
 ```sql
 use master
 go
 RESTORE FILELISTONLY FROM DISK = 'D:\Backup\AdventureWorks\AdventureWorks2019.bak' WITH FILE = 1  
 ```
-Restore **AdventureWorks** and rename DB  
+Restore **AdventureWorks** (WITH MOVE...TO... REPLACE)  
 ```mssql
 RESTORE DATABASE AdventureWorksSample
 FROM disk= 'D:\Backup\AdventureWorks\AdventureWorks2019.bak'
