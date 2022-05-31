@@ -16,9 +16,9 @@ Restore **AdventureWorks** (WITH MOVE...TO... REPLACE)
 RESTORE DATABASE AdventureWorksSample
 FROM disk= 'D:\Backup\AdventureWorks\AdventureWorks2019.bak'
 WITH MOVE 'AdventureWorks2017' 
-TO 'N:\DATA\AdventureWorksSample.mdf',
+TO 'D:\DATA\AdventureWorksSample.mdf',
 MOVE 'AdventureWorks2017_Log' 
-TO 'K:\LOG\AdventureWorksSample.ldf',
+TO 'D:\LOG\AdventureWorksSample.ldf',
 REPLACE
 ```
 
