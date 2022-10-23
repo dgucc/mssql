@@ -36,3 +36,7 @@ Example : log backup
 ```mssql
 sqlcmd -S 127.0.0.1 -E -i instnwnd.sql -o log/instnwnd.log  
 ```
+## Cumulative Updates 
+[sqlperformance](https://sqlperformance.com/latest-builds)
+[sqlserverbuilds](https://sqlserverbuilds.blogspot.com/)
+
