@@ -32,8 +32,13 @@ Example : differential backup
 Example : log backup  
 [SQL Server Transaction Log Backup](https://www.sqlservertutorial.net/sql-server-administration/sql-server-transaction-log-backup/)  
 
-## Attach existing Database  
+## Detach/Attach Database  
 ```mssql
+USE [master]
+GO
+EXEC MASTER.dbo.sp_detach_db @dbname = N'MyDatabase'
+GO
+...
 CREATE DATABASE [MyDatabase]  ON 
 	(FILENAME ='C:\DATA\MyDatabase.mdf'), 
 	(FILENAME = 'C:\DATA\MyDatabase_log.ldf') 
