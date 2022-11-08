@@ -22,7 +22,9 @@ TO 'D:\LOG\AdventureWorksSample.ldf',
 REPLACE
 ```
 
-## Backup-Restore in T-SQL
+## T-SQL
+
+Backup-Restore  
 
 Example : differential backup  
 [SQL Server Differential Backup](https://www.sqlservertutorial.net/sql-server-administration/sql-server-differential-backup/)  
@@ -30,12 +32,26 @@ Example : differential backup
 Example : log backup  
 [SQL Server Transaction Log Backup](https://www.sqlservertutorial.net/sql-server-administration/sql-server-transaction-log-backup/)  
 
+## Attach existing Database  
+```mssql
+CREATE DATABASE [MyDatabase]  ON 
+	(FILENAME ='C:\DATA\MyDatabase.mdf'), 
+	(FILENAME = 'C:\DATA\MyDatabase_log.ldf') 
+FOR ATTACH; 
+```
+
 ## SQLCMD  
  -S : server name  
  -E : Trusted Connection  
 ```mssql
 sqlcmd -S 127.0.0.1 -E -i instnwnd.sql -o log/instnwnd.log  
 ```
+
+Specify UTF-8  
+```mssql
+> sqlcmd -S 127.0.0.1 -i dml.sql -f 65001
+```
+
 ## Cumulative Updates 
 [sqlperformance](https://sqlperformance.com/latest-builds)
 [sqlserverbuilds](https://sqlserverbuilds.blogspot.com/)
