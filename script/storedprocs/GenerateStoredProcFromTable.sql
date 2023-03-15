@@ -1,4 +1,8 @@
  /*
+ TO TEST 
+ https://www.sqlservercentral.com/articles/automatically-generate-stored-procedures
+ https://stackoverflow.com/questions/11673563/how-do-i-generate-crud-stored-procedures-from-a-table-in-sql-server-management-s
+ 
 This is a simple, single-table CRUD Generator. It does not have a bunch of 
 bells and whistles, and is easy to follow and modify. I wrote this to make
 my job easier, and I am sharing it with you to do with it as you wish.
