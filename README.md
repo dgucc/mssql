@@ -56,6 +56,12 @@ Specify UTF-8
 ```mssql
 > sqlcmd -S 127.0.0.1 -i dml.sql -f 65001
 ```
+## SQL Express
+
+Start|Stop SQL Express :  SqlLocalDB.exe [start|stop] [instance] [-i nowait|-k kill]  
+`> "C:\Program Files\Microsoft SQL Server\150\Tools\Binn\SqlLocalDB.exe" stop "MSSQLLocalDB" -i `  
+`> "C:\Program Files\Microsoft SQL Server\150\Tools\Binn\SqlLocalDB.exe" stop "MSSQLLocalDB" -k `  
+`> "C:\Program Files\Microsoft SQL Server\150\Tools\Binn\SqlLocalDB.exe" start "MSSQLLocalDB" `  
 
 ## Cumulative Updates 
 [sqlperformance](https://sqlperformance.com/latest-builds)
