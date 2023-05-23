@@ -1,5 +1,5 @@
 # SQL Server
-
+![Avatar](https://github.com/dgucc/sandbox/blob/main/tips/images/avatar.gif)  
 ## Sample DB **AdventureWorks**
 
 Download backup files :
