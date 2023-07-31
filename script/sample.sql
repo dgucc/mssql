@@ -1,6 +1,6 @@
 -- Datediff example  
 
-```tsql
+```sql
 DECLARE @months INT
 SET @months = DATEDIFF(MONTH, CAST('1973-09-23' AS DATETIME), GETDATE())
 SELECT 
